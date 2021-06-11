@@ -1,0 +1,16 @@
+{
+  "name": "node-consolog",
+  "version": "1.0.0",
+  "description": "Simple loger for node apps",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kccarbone/node-consolog.git"
+  },
+  "author": "Kyle Carbone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kccarbone/node-consolog/issues"
+  },
+  "homepage": "https://github.com/kccarbone/node-consolog#readme"
+}
