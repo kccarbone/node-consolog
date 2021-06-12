@@ -1,6 +1,6 @@
 {
   "name": "node-consolog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple loger for node apps",
   "main": "index.js",
   "repository": {
@@ -12,5 +12,10 @@
   "bugs": {
     "url": "https://github.com/kccarbone/node-consolog/issues"
   },
-  "homepage": "https://github.com/kccarbone/node-consolog#readme"
+  "homepage": "https://github.com/kccarbone/node-consolog#readme",
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "loglevel": "^1.7.1",
+    "loglevel-plugin-prefix": "^0.8.4"
+  }
 }
