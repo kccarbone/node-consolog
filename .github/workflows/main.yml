@@ -28,10 +28,9 @@ jobs:
         id: publish
         uses: JS-DevTools/npm-publish@v1
         with:
-          dry-run: true
           check-version: true
           token: ${{ secrets.NPM_TOKEN }}
-      - name: Release
+      - name: Publish GitHub release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ steps.publish.outputs.version }}
