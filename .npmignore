@@ -1,0 +1,19 @@
+# ci/cd
+.github/
+.gitignore
+
+# modules
+node_modules/
+
+# npm cache 
+.npm
+
+# packaged library
+*.tgz
+
+# test files
+*.test.js
+
+# logs
+logs
+*.log

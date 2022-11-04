@@ -1,8 +1,11 @@
 {
   "name": "node-consolog",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Simple loger for node apps",
   "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kccarbone/node-consolog.git"
@@ -13,9 +16,7 @@
     "url": "https://github.com/kccarbone/node-consolog/issues"
   },
   "homepage": "https://github.com/kccarbone/node-consolog#readme",
-  "dependencies": {
-    "chalk": "^4.1.1",
-    "loglevel": "^1.7.1",
-    "loglevel-plugin-prefix": "^0.8.4"
+  "devDependencies": {
+    "jest": "^29.2.2"
   }
 }
