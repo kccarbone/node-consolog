@@ -1,6 +1,6 @@
 /* Built-in actions */
 
-export function printToConsole(timestamp, level, name, message) {
+function printToConsole(timestamp, level, name, message) {
   const color = [
     { label: 'TRACE', fg: 90, bg: 49 },
     { label: 'DEBUG', fg: 36, bg: 49 },
@@ -19,3 +19,7 @@ export function printToConsole(timestamp, level, name, message) {
     + style(`${message}`, 39, 49)
   );
 }
+
+module.exports = [
+  printToConsole
+];
