@@ -16,11 +16,9 @@ class Logger {
   fatal = msg => this.log(msg, levels.FATAL);
 
   log(message, level = levels.TRACE) {
+    const timestamp = new Date();
+
     if (level >= config.threshold) {
-      const two = num => `0${num.toString()}`.slice(-2);
-      const now = new Date();
-      const timestamp = `${two(now.getHours())}:${two(now.getMinutes())}:${two(now.getSeconds())}`;
-      
       for (let i = 0; i < config.actions.length; i++) {
         config.actions[i](timestamp, level, this._name, message);
       }

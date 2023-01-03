@@ -9,9 +9,6 @@ const logger = consolog.getLogger();
 const mockAction = jest.fn().mockName('mockAction');
 consolog.config.actions.push(mockAction);
 
-
-console.log(global);
-
 // Helper functions
 function expectLogWithParams(level, message) {
   const lastCall = mockAction.mock.calls[mockAction.mock.calls.length - 1];
